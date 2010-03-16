@@ -8,7 +8,7 @@ It provides a behaviour assertion syntax for C# objects:
 var foo = "foo";
 
 foo.Should().BeA<string>();
-foo.Should().NotBeA<string>()
+foo.Should().NotBeA<int>()
 foo.Should().Equal("foo"); 
 foo.Should().NotEqual("bar"); 
 
