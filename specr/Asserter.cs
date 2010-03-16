@@ -50,5 +50,25 @@ namespace specr
         {
             NotBeA<TNotExpected>();
         }
+
+        public dynamic HaveA()
+        {
+            return new DynamicNullMemberAsserter<T>(obj, ExpectedNullability.NotNull);
+        }
+
+        public dynamic HaveAn()
+        {
+            return HaveA();
+        }
+
+        public dynamic NotHaveA()
+        {
+            return new DynamicNullMemberAsserter<T>(obj, ExpectedNullability.Null);
+        }
+
+        public dynamic NotHaveAn()
+        {
+            return NotHaveA();
+        }
     }
 }

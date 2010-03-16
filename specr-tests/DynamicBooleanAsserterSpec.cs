@@ -23,14 +23,14 @@ namespace specr_tests
         }
 
         [TestMethod]
-        public void It_Should_Have_A_Be_Property_That_Tests_A_Boolean_Starting_With_Is_Is_True()
+        public void It_Should_Test_A_Boolean_Starting_With_Is_Is_True_If_Be_Was_Used()
         {
             dynamic dAssert = person.Should().Be();
             dAssert.Awesome();
         }
 
         [TestMethod]
-        public void It_Should_Tests_A_Boolean_Starting_With_Is_Is_False_If_NotBe_Was_Used()
+        public void It_Should_Test_A_Boolean_Starting_With_Is_Is_False_If_NotBe_Was_Used()
         {            
             person.IsAwesome = false;
             person.Should().NotBe().Awesome();            

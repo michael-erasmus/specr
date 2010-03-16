@@ -27,5 +27,15 @@ namespace specr
         {
             Assert.IsNotInstanceOfType(obj, typeof(TNotExpected));
         }
+
+        public static void AssertIsNotNull(object obj)
+        {
+            Assert.IsNotNull(obj);
+        }
+
+        public static void AssertIsNull(object obj)
+        {
+            Assert.IsNull(obj);
+        }
     }
 }

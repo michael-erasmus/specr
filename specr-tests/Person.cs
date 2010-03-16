@@ -11,5 +11,7 @@ namespace specr_tests
     class Person
     {
         public bool IsAwesome { get; set; }
+
+        public Person Father { get; set; }
     }
 }

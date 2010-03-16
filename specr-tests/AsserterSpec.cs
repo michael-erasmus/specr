@@ -122,5 +122,28 @@ namespace specr_tests
         {
             fooAsserter.NotBeAn<int>();
         }
+
+#if NUNIT
+        [Test]
+#else
+        [TestMethod]
+#endif
+        public void It_Should_Return_A_DynamicNullMemberAsserter_Expecting_NonNull_When_HaveA_Is_Called()
+        {
+            var assert = personAsserter.HaveA() as DynamicNullMemberAsserter<Person>;
+            assert.Expected.Should().Equal(ExpectedNullability.NotNull);
+        }
+
+        
+#if NUNIT
+        [Test]
+#else
+        [TestMethod]
+#endif
+        public void It_Should_Return_A_DynamicNullMemberAsserter_Expecting_Null_When_NotHaveA_Is_Called()
+        {
+            var assert = personAsserter.NotHaveA() as DynamicNullMemberAsserter<Person>;
+            assert.Expected.Should().Equal(ExpectedNullability.Null);
+        }
     }
 }
