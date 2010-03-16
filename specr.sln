@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "specr", "specr\specr.csproj", "{EB93FA6D-20AA-45A2-A251-A15586EC3F42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "specr-tests", "specr-tests\specr-tests.csproj", "{D0CA06C4-99A2-4A08-958D-7F48333DD91D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{306FDD69-9D6C-4080-A162-334580A516C7}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		specr.vsmdi = specr.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "specr.nunit", "specr.nunit\specr.nunit.csproj", "{E5F8F460-2FDC-4180-8D37-066960A57CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spec.nunit-tests", "spec.nunit-tests\spec.nunit-tests.csproj", "{F12AB0C7-7599-4CDE-B6AD-0EB0CD277FFC}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = specr.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB93FA6D-20AA-45A2-A251-A15586EC3F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB93FA6D-20AA-45A2-A251-A15586EC3F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB93FA6D-20AA-45A2-A251-A15586EC3F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB93FA6D-20AA-45A2-A251-A15586EC3F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0CA06C4-99A2-4A08-958D-7F48333DD91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CA06C4-99A2-4A08-958D-7F48333DD91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CA06C4-99A2-4A08-958D-7F48333DD91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CA06C4-99A2-4A08-958D-7F48333DD91D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F8F460-2FDC-4180-8D37-066960A57CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F8F460-2FDC-4180-8D37-066960A57CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F8F460-2FDC-4180-8D37-066960A57CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F8F460-2FDC-4180-8D37-066960A57CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F12AB0C7-7599-4CDE-B6AD-0EB0CD277FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12AB0C7-7599-4CDE-B6AD-0EB0CD277FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12AB0C7-7599-4CDE-B6AD-0EB0CD277FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12AB0C7-7599-4CDE-B6AD-0EB0CD277FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
