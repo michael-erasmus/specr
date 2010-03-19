@@ -5,4 +5,4 @@ TestResults
 *.suo
 Thumbs.db
 *.testsettings
-
+*.vsmdi
