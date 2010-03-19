@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace specr_tests
+namespace specr_specs
 {
     /// <summary>
     /// Just a test class used in the specifications

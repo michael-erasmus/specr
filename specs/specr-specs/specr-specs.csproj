@@ -9,8 +9,8 @@
     <ProjectGuid>{D0CA06C4-99A2-4A08-958D-7F48333DD91D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>specr_tests</RootNamespace>
-    <AssemblyName>specr-tests</AssemblyName>
+    <RootNamespace>specr_specs</RootNamespace>
+    <AssemblyName>specr-specs</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -58,7 +58,7 @@
     <Compile Include="ShouldSpec.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\specr\specr.csproj">
+    <ProjectReference Include="..\..\src\specr\specr.csproj">
       <Project>{EB93FA6D-20AA-45A2-A251-A15586EC3F42}</Project>
       <Name>specr</Name>
     </ProjectReference>

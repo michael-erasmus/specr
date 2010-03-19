@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 #endif
 using specr;
 
-namespace specr_tests
+namespace specr_specs
 {
     /// <summary>
     /// Describes the Asserter object that is return from the Should() method

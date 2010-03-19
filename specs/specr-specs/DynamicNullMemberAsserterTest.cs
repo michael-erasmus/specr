@@ -2,10 +2,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace specr_tests
-{   
-    
-    
+namespace specr_specs
+{       
+    /// <summary>
+    /// Describes the expected behaviour of the DynamicNullMemberAsserter object
+    /// </summary>
     [TestClass]
     public class DescribeDynamicNullMemberAsserter
     {
