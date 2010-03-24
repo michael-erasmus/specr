@@ -4,22 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Dynamic;
 using System.Reflection;
+using specr.Reflection;
 
 namespace specr
 {
     public enum ExpectedNullability { Null, NotNull };
 
-    public class DynamicNullMemberAsserter<T> : DynamicObject
+    public class DynamicNullMemberAsserter<TObj> : DynamicAsserter<TObj, ExpectedNullability>
     {
-        private T obj;
-        private PropertyInfo[] properties = typeof(T).GetProperties();
 
-        public ExpectedNullability Expected { get; private set; }
-
-        public DynamicNullMemberAsserter(T obj, ExpectedNullability expected)
+        public DynamicNullMemberAsserter(TObj obj, ExpectedNullability expected)
+            : base(obj, expected)
         {
-            Expected = expected;
-            this.obj = obj;
         }
 
         public override bool TryInvokeMember(InvokeMemberBinder binder, object[] args, out object result)

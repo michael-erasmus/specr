@@ -11,11 +11,11 @@ namespace specr
         public static Asserter<T> Should<T>(this T obj)
         {
             return new Asserter<T>(obj);
-        }
+        }        
 
-        public static dynamic ShouldBe<T>(this T obj)
+        public static bool IsNull<T>(this T obj)
         {
-            return new ExpandoObject();
+            return obj == null;
         }
     }
 }

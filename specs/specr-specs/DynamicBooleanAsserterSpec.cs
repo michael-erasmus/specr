@@ -35,6 +35,14 @@ namespace specr_specs
             person.IsAwesome = false;
             person.Should().NotBe().Awesome();            
         }
+
+        [TestMethod]
+        public void Should_Call_The_IsNull_Extension_Method_When_Null_Is_Called_As_A_Special_Case()
+        {
+            person.Should().NotBe().Null();
+            person = null;
+            person.Should().Be().Null();
+        }
        
     }
 }

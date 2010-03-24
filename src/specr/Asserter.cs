@@ -61,6 +61,11 @@ namespace specr
             return HaveA();
         }
 
+        public dynamic Have()
+        {
+            return HaveA();
+        }
+
         public dynamic NotHaveA()
         {
             return new DynamicNullMemberAsserter<T>(obj, ExpectedNullability.Null);

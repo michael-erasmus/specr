@@ -47,6 +47,9 @@
     <Compile Include="..\specr\Asserter.cs">
       <Link>Asserter.cs</Link>
     </Compile>
+    <Compile Include="..\specr\DynamicAsserter.cs">
+      <Link>DynamicAsserter.cs</Link>
+    </Compile>
     <Compile Include="..\specr\DynamicBooleanAsserter.cs">
       <Link>DynamicBooleanAsserter.cs</Link>
     </Compile>

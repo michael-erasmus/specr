@@ -4,19 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Dynamic;
 using System.Reflection;
+using specr.Reflection;
 
 namespace specr
 {
-    public class DynamicBooleanAsserter<T> : DynamicObject
+    public class DynamicBooleanAsserter<TObj> : DynamicAsserter<TObj, bool>
     {
-        private T obj;
-        private PropertyInfo[] properties = typeof(T).GetProperties();
-
-
-        public DynamicBooleanAsserter(T obj, bool expected)
+        public DynamicBooleanAsserter(TObj obj, bool expected)
+            : base(obj, expected)
         {
-            this.obj = obj;
-            Expected = expected;
         }
 
         public override bool TryInvokeMember(InvokeMemberBinder binder, object[] args, out object result)
@@ -29,10 +25,14 @@ namespace specr
                 result.Should().Equal(Expected);
                 return true;
             }
+            else if (binder.Name == "Null")
+            {                
+                result = obj.IsNull();
+                result.Should().Equal(Expected);
+                return true;
+            }
 
             return base.TryInvokeMember(binder, args, out result);
         }
-
-        public bool Expected { get; private set; }
     }
 }
