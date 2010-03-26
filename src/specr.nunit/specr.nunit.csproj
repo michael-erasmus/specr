@@ -53,6 +53,9 @@
     <Compile Include="..\specr\DynamicBooleanAsserter.cs">
       <Link>DynamicBooleanAsserter.cs</Link>
     </Compile>
+    <Compile Include="..\specr\DynamicIEnumerableMemberAsserter.cs">
+      <Link>DynamicIEnumerableMemberAsserter.cs</Link>
+    </Compile>
     <Compile Include="..\specr\DynamicNullMemberAsserter.cs">
       <Link>DynamicNullMemberAsserter.cs</Link>
     </Compile>

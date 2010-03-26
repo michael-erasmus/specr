@@ -145,5 +145,31 @@ namespace specr_specs
             var assert = personAsserter.NotHaveA() as DynamicNullMemberAsserter<Person>;
             assert.Expected.Should().Equal(ExpectedNullability.Null);
         }
+
+#if NUNIT
+        [Test]
+#else
+        [TestMethod]
+#endif
+        public void It_Should_Return_A_DynamicIEnumerableMemberAsserter_Expecting_N_WhenHaveN_Is_Called()
+        {
+            var assert = personAsserter.Have(4) as DynamicIEnumerableMemberAsserter<Person>;
+            assert.Should().BeA<DynamicIEnumerableMemberAsserter<Person>>();
+            assert.Should().NotBe().Null();
+            assert.Expected.Should().Equal(4);
+        }
+#if NUNIT
+        [Test]
+#else
+        [TestMethod]
+#endif
+        public void It_Should_Return_A_DynamicIEnumerableMemberAsserter_Expecting_Zero_WhenHaveNo_Is_Called()
+        {
+            var assert = personAsserter.HaveNo() as DynamicIEnumerableMemberAsserter<Person>;
+
+            assert.Should().BeA<DynamicIEnumerableMemberAsserter<Person>>();
+            assert.Should().NotBe().Null();
+            assert.Expected.Should().Equal(0);
+        }
     }
 }

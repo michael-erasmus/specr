@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="AsserterSpec.cs" />
     <Compile Include="DynamicBooleanAsserterSpec.cs" />
+    <Compile Include="DynamicIEnumerableMemberAsserterSpec.cs" />
     <Compile Include="DynamicNullMemberAsserterTest.cs" />
     <Compile Include="NullSpec.cs" />
     <Compile Include="Person.cs" />

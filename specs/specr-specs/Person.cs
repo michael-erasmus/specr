@@ -13,5 +13,8 @@ namespace specr_specs
         public bool IsAwesome { get; set; }
 
         public Person Father { get; set; }
+        public Person Mother { get; set; }    
+
+        public List<Person> Children { get; set; }
     }
 }

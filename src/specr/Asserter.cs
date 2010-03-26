@@ -75,5 +75,15 @@ namespace specr
         {
             return NotHaveA();
         }
+
+        public dynamic Have(int count)
+        {
+            return new DynamicIEnumerableMemberAsserter<T>(obj, count);
+        }
+
+        public dynamic HaveNo()
+        {
+            return new DynamicIEnumerableMemberAsserter<T>(obj, 0);
+        }
     }
 }
